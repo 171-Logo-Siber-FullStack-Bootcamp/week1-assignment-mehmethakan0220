@@ -1,5 +1,5 @@
 let method = "GET";
-let url = "https://jsonplaceholder.typicode.com/users";
+let successUrl = "https://jsonplaceholder.typicode.com/users";
 let badUrl = "http://fjdskla.com";
 let timeoutUrl = "http://www.google.com:81/"
 
@@ -62,8 +62,8 @@ client.onreadystatechange = function(){
 }
 
 // client.open(method,badUrl);
-// client.open(method,url);
-client.open(method,timeoutUrl); //
+ client.open(method,successUrl);
+// client.open(method,timeoutUrl); //for timeout and aborting
 
 
 //response formatting
